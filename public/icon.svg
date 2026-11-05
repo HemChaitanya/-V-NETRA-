@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="50%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#f59e0b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background with slight rounded corners -->
+  <rect width="512" height="512" rx="104" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="100" fill="none" stroke="#f59e0b" stroke-width="6" stroke-opacity="0.4"/>
+
+  <!-- Radar Hazard Concentric Rings -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#374151" stroke-width="2" stroke-dasharray="8 6"/>
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#ef4444" stroke-width="3" stroke-opacity="0.5"/>
+  <circle cx="256" cy="256" r="110" fill="url(#pulseGlow)"/>
+
+  <!-- High-Voltage Grid Cross-Arm Lines -->
+  <line x1="140" y1="210" x2="372" y2="210" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="256" y1="210" x2="256" y2="390" stroke="#64748b" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="160" cy="210" r="12" fill="#ef4444"/>
+  <circle cx="352" cy="210" r="12" fill="#ef4444"/>
+
+  <!-- Central Dynamic Lightning Bolt Symbol -->
+  <polygon points="275,80 185,250 255,250 235,420 345,230 275,230" fill="url(#boltGrad)" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- APSEB Emergency text -->
+  <text x="256" y="465" text-anchor="middle" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" letter-spacing="4">V-NETRA PWA</text>
+</svg>

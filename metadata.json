@@ -1,0 +1,6 @@
+{
+  "name": "V-Netra",
+  "description": "Instantly verify storm-damaged power lines and map emergency repair priorities for utility engineers using AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
